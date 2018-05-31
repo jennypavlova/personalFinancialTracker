@@ -1,0 +1,29 @@
+{
+  "name": "finance-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run react-start\" \"npm run sass\"",
+    "sass": "./node_modules/.bin/node-sass -w src/scss -o src/css",
+    "react-start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prune": "npm prune"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "node-sass": "^4.6.1",
+    "prettier": "^1.12.1"
+  }
+}
